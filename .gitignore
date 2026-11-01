@@ -1,0 +1,34 @@
+# Secrets: never commit these
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+secrets/
+credentials*
+
+# Real or raw data: only synthetic data belongs in this repo
+data/raw/
+*.local.csv
+exports/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Caches, logs and generated output
+.cache/
+*.log
+output/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
